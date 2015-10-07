@@ -13,3 +13,60 @@
  *= require_tree .
  *= require_self
  */
+
+ /* NAVBAR
+ ----------*/
+.navbar-brand {
+  margin-top: -6px;
+}
+
+nav .navbar-nav {
+  float: right;
+}
+/* NAVBAR
+----------END*/
+
+ /* FOOTER
+ ----------*/
+ .site-footer {
+   background: #222222;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   left: 0;
+ }
+
+ .site-footer p,
+ .fb-like,
+ .twitter {
+   display: inline-block;
+ }
+
+ .twitter,
+ .fb-like {
+   float: right;
+ }
+
+ .site-footer p {
+   color: white;
+   margin: 8px 0 8px 20px;
+ }
+
+ .fb-like {
+   margin: 6.5px 5px 0px 0px;
+ }
+
+ .twitter {
+   margin: 8px 20px 0px 0px;
+ }
+ /* FOOTER
+ ----------END*/
+
+/* TYPOGRAPHY */
+p, li {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+li a {
+  font-size: 1.2em;
+}
