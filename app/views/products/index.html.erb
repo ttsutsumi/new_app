@@ -14,7 +14,18 @@
   </thead>
 
   <tbody>
+    <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
+      <div class="item<%= " active" if product == @products.first %>">
+        <%= image_tag(product.image_url) %>
+        <div class="carousel-caption">
+          <%= product.name %>
+        </div>
+      </div>
+      <% end %>
+  </div>
+  <!--
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
@@ -24,6 +35,9 @@
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    -->
+    <% @products.each do |product| %>
+      <%= render @products %>
     <% end %>
   </tbody>
 </table>
