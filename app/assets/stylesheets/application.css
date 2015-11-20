@@ -23,6 +23,10 @@
 nav .navbar-nav {
   float: right;
 }
+
+li {
+  text-transform: uppercase;
+}
 /* NAVBAR
 ----------END*/
 
