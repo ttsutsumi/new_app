@@ -10,24 +10,25 @@
       </ul>
     </div>
   <% end %>
-
+<div class="addform">
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <label for="product_name" id="prodname">Name</label><br>
+    <input id="product_name" name="product[name]" type="text" />
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.label :description, class: "col-md-4 control-label" %><br>
+    <%= f.text_field :description, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
+    <%= f.label :image_url, class: "col-md-4 control-label" %><br>
+    <%= f.text_field :image_url, class: "form-control" %>
   </div>
   <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
-  </div>    
+    <%= f.label :color, class: "col-md-4 control-label" %><br>
+    <%= f.text_field :color, class: "form-control" %>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-warning" %>
   </div>
+</div>
 <% end %>

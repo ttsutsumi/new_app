@@ -24,9 +24,19 @@ nav .navbar-nav {
   float: right;
 }
 
+.navbar-search {
+  float: right;
+  margin-top: 13px;
+}
+
 li {
   text-transform: uppercase;
 }
+
+.btn {
+  margin: -4.5px 0px 0px 3px;
+}
+
 /* NAVBAR
 ----------END*/
 

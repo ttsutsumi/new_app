@@ -1,3 +1,28 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.addform {
+  display: inline-block;
+}
+
+#prodname {
+  margin-left: 15px;
+}
+
+#product_name {
+  margin-left: 30px;
+  width: 400px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.form-control {
+  width: 400px;
+  margin-left: 30px;
+}
+
+.actions {
+  margin: 20px 0 0 295px;
+  padding-bottom: 10px;
+}
