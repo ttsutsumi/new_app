@@ -16,8 +16,8 @@
 
  /* NAVBAR
  ----------*/
-.navbar-brand {
-  margin-top: -6px;
+.navbar-header {
+  margin-top: 9px;
 }
 
 nav .navbar-nav {
