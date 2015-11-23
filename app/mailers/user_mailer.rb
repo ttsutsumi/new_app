@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer::Base
+class UserMailer < ActionMailer::Base
   default from: "default@coffeelabtoronto.com"
 
   def contact_form(email, name, message)
