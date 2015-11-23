@@ -10,6 +10,29 @@
           <li>I respond to most inquiries within 12 business hours. If you need my immediate attention, please put the word "Urgent" in your subject line and I'll try to respond to you faster.</li>
         </ul>
       </div>
+
+      <%= flash[:notice] %>
+
+      <%= form_tag("/static_pages/thank_you") do %>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <%= label_tag :name, "Name" %>
+            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag :name, "E-mail Address" %>
+            <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter E-mail" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag :name, "Message" %>
+            <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+          </div>
+        </div>
+      </div>
+      <%= submit_tag "Send" %>
+      <% end %>
+      
       <div class="phone">
         <h2><span class="glyphicon glyphicon-earphone"></span> Prefer a phone conversation?</h2>
         <p>You can reach me at (416)333-3333.<p>
